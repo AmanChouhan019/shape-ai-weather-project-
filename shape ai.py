@@ -29,6 +29,10 @@ def printoutput():
 
 printoutput()
 
+sys.stdout = open('shapeai.txt', 'w')
+print(printoutput())
+sys.stdout.close()
+
 #x=open('shapeai.txt','a')
 #print('{}' (printoutput()), file=x)
 #x.close()
@@ -39,7 +43,5 @@ printoutput()
 
 
 
-sys.stdout = open('shapeai.txt', 'w')
-print(printoutput())
-sys.stdout.close()
+
 
